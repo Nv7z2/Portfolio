@@ -1,0 +1,39 @@
+name: 🚀 Deploy website on push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v3
+
+    - name: 📡 Install Node.js
+      uses: actions/setup-node@v2.5.2
+
+    - name: 🔗 Install dependencies
+      run: npm install --omit=optional
+
+    - name: 🧰 Run gulp
+      run: npx gulp compile
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: sztuka-tatuazu.pl
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: /
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/assets/sass/**
+          **/package.json
+          **/gulpfile.js
+    

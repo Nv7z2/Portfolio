@@ -1,0 +1,22 @@
+// Mixin dla zapytań mediów
+@mixin mq($breakpoint) {
+    // Definicja popularnych punktów przerwania (breakpoints)
+    $breakpoints: (
+      small: 480px,
+      medium: 768px,
+      large: 1024px,
+      xlarge: 1200px,
+    );
+  
+    // Sprawdzenie, czy zdefiniowany breakpoint istnieje
+    @if map-has-key($breakpoints, $breakpoint) {
+      // Użycie media query dla danego breakpointu
+      @media only screen and (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+      }
+    } @else {
+      // Komunikat o błędzie, jeśli breakpoint nie istnieje
+      @error "Nieznany breakpoint: #{$breakpoint}. Dostępne: #{map-keys($breakpoints)}";
+    }
+  }
+  
