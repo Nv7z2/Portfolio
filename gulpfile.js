@@ -28,7 +28,7 @@ const compileScripts = () => {
 
 const watchForChanges = () => {
   watch('assets/sass/**/*.scss', compileStyles);
-  watch('assets/js/*.js', compileScripts);
+  watch('assets/js/**/*.js', compileScripts);
 }
 
 exports.default = watchForChanges;
