@@ -1,0 +1,39 @@
+@use '../base/variables' as v;
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    padding: 20px 30px;
+    color: v.$primary;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+
+    &--main {
+        @extend .button;
+
+        gap: 25px;
+        transition: all .125s ease-in-out;
+        border: 1px solid v.$primary;
+
+        svg {
+            transition: transform .25s ease;
+        }
+
+        &:hover svg path {
+            stroke: v.$background-color;
+            fill: v.$background-color;
+        }
+
+        &:hover svg {
+            transform: rotate(45deg);
+        }
+
+        &:hover {
+            background-color: v.$primary;
+            color: v.$background-color;
+        }
+    }
+}

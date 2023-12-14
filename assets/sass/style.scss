@@ -4,9 +4,14 @@
 @import 'base/variables';
 @import 'base/typography';
 
+// Components
+@import 'components/headings';
+@import 'components/button';
+
 // Layout
 @import 'layout/header';
 @import 'layout/footer';
 
 // Pages
+@import 'pages/main';
 @import 'pages/home';
