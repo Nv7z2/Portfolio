@@ -1,6 +1,16 @@
 @use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 body {
     background-color: v.$background-color;
     min-height: 100vh;
+}
+
+section {
+    max-width: calc(100vw - 100px);
+    margin: 0 auto;
+
+    @include m.mq(small) {
+        max-width: calc(100vw - 40px);
+    }
 }

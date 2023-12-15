@@ -1,4 +1,5 @@
 @use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 .heading--h1 {
     color: v.$text-color;
@@ -8,4 +9,22 @@
     font-weight: 900;
     line-height: 105px; /* 131.25% */
     letter-spacing: 4px;
+
+    @include m.mq(large) {
+        font-size: 56px;
+        line-height: 64px;
+    }
+    
+    @include m.mq(small) {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+.heading--h2 {
+    color: v.$text-color;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
 }
