@@ -1,0 +1,6 @@
+@use '../base/variables' as v;
+
+body {
+    background-color: v.$background-color;
+    min-height: 100vh;
+}

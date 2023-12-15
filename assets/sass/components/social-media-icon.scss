@@ -1,0 +1,16 @@
+@use '../base/variables' as v;
+
+
+.social-media-icon,
+.social-media-icon--medium {
+    transition: all .15s ease;
+
+    &:hover path {
+        stroke: v.$primary;
+    }
+
+    &--medium:hover path {
+        stroke: unset;
+        fill: v.$primary;
+    }
+}

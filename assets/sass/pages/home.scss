@@ -1,0 +1,48 @@
+@use '../base/variables' as v;
+
+.home {
+    max-width: v.$desktop-max-width;
+    margin: 0 auto;
+}
+
+.home__hero {
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 80px;
+    position: relative;
+
+    .hero-animated-text {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        path {
+            stroke-width: 5px !important;
+            stroke: rgba(v.$primary, 10%) !important;
+        }
+    }
+
+    .hero-text-content {
+        flex: 2;
+    }
+
+    .hero-social-media {
+        flex: 1;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .hero-description {
+        margin: 50px 0;
+    }
+
+    .hero-buttons {
+        display: flex;
+        gap: 40px;
+    }
+}
