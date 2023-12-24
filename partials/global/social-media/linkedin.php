@@ -4,7 +4,7 @@ $linkedin_link = get_field('linkedin', 'option');
 
 ?>
 
-<a href="<?php echo $linkedin_link; ?>" target="_blank">
+<a href="<?php echo $linkedin_link; ?>" target="_blank" title="kacper baran linkedin">
     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none" class="social-media-icon">
     <g clip-path="url(#clip0_248_222)">
         <path d="M29.6528 1.45831L5.34726 1.45831C3.19949 1.45831 1.45837 3.19943 1.45837 5.3472L1.45837 29.6528C1.45837 31.8005 3.19949 33.5416 5.34726 33.5416L29.6528 33.5416C31.8006 33.5416 33.5417 31.8005 33.5417 29.6528L33.5417 5.3472C33.5417 3.19943 31.8006 1.45831 29.6528 1.45831Z" stroke="#262626" stroke-width="2"/>

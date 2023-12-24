@@ -1,10 +1,10 @@
 <?php
 
-$medium_link = get_field('mnedium', 'option');
+$medium_link = get_field('medium', 'option');
 
 ?>
 
-<a href="<?php echo $medium_link; ?>" target="_blank">
+<a href="<?php echo $medium_link; ?>" target="_blank" title="kacper baran medium">
     <svg xmlns="http://www.w3.org/2000/svg" width="38" height="20" viewBox="0 0 38 20" fill="none" class="social-media-icon--medium">
     <g clip-path="url(#clip0_248_227)">
         <path d="M20.6667 10C20.6667 15.5228 16.1896 20 10.6667 20C5.1439 20 0.666748 15.5228 0.666748 10C0.666748 4.47715 5.1439 0 10.6667 0C16.1896 0 20.6667 4.47715 20.6667 10Z" fill="#262626"/>
