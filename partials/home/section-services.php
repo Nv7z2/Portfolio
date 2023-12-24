@@ -15,9 +15,9 @@ $services_repeater = $services_section['single_service'];
                 foreach ( $services_repeater as $single_service ): ?>
                 
                 <a href="#<?php echo str_replace(' ', '-', strtolower($single_service['service_name'])) ?>" class="service-name-link <?php if ($loop_index == 1) echo 'service-name-link--active'; ?>">
-                    <h3 class="service-name">
+                    <span class="service-name">
                         <?php echo $single_service['service_name']; ?>
-                    </h3>
+                    </span>
                 </a>
 
         <?php

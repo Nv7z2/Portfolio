@@ -104,7 +104,7 @@
         }
 
         li a {
-            color: #414141;
+            color: #9E9E9E;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
@@ -128,8 +128,10 @@
         li.current_page_item a {
             color: v.$text-color;
             display: flex;
+            font-weight: bold;
             align-items: center;
             gap: 12px;
+            letter-spacing: 1px;
 
             &::before {
                 display: inline-block;
