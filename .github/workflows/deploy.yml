@@ -28,7 +28,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: kacperbaran.pl
+        server: 185.242.134.73
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASSWORD }}
         server-dir: public_html/wp-content/themes/kacperbaran/
