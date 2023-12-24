@@ -19,8 +19,11 @@ jobs:
     - name: 🔗 Install dependencies
       run: npm install --omit=optional
 
-    - name: 🧰 Run gulp
-      run: npx gulp compile
+    - name: 🧰 Run gulp compile styles
+      run: npx gulp compileStyles
+
+    - name: 🧰 Run gulp compile scripts
+      run: npx gulp compileScripts
 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
