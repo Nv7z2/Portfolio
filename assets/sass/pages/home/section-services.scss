@@ -1,0 +1,86 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.home__services {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: v.$desktop-section-margin-bottom;
+
+    @include m.mq(small) {
+        margin-bottom: v.$mobile-section-margin-bottom;
+    }
+
+    .services-heading-wrapper {
+        margin-top: 30px;
+        display: flex;
+        gap: 50px;
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        @include m.mq(medium) {
+            padding-bottom: 10px;
+
+            &::-webkit-scrollbar {
+                display: block;
+                height: 5px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background-color: lighten(v.$background-color, 5%);
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: lighten(v.$background-color, 15%);
+            }
+        }
+    }
+
+    .service-name-link {
+        padding: 10px 20px;
+        white-space: nowrap;
+        height: fit-content;
+
+        & > .service-name {
+            color: #414141;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            @include m.mq(medium) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .service-name-link--active {
+        border-radius: 10px;
+        background: #212121;
+
+        & > .service-name {
+            color: v.$text-color;
+        }
+    }
+
+    .services-description-wrapper {
+        margin: 50px 0;
+    }
+
+    .service-description {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        visibility: hidden;
+        max-height: 0;
+        
+        &--active {
+            visibility: visible;
+            max-height: max-content;
+            margin-bottom: 50px;
+        }
+    }
+}

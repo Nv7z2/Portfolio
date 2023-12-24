@@ -1,9 +1,12 @@
 // COLORS
-$background-color: #F7F4F2;
-$text-color: #262626;
-$primary: #F34242;
+$background-color: #0F0F0F;
+$text-color: #EDEDED;
+$primary: #f7a900;
 
 // SPACING DESKTOP
-$desktop-margin-horizontal: 220px;
-$desktop-max-width: calc(1920px - ($desktop-margin-horizontal * 2));
+$desktop-margin-horizontal: 320px;
+$desktop-max-width: calc(100vw - ($desktop-margin-horizontal * 2));
+$desktop-section-margin-bottom: 180px;
 
+// SPACING MOBILE
+$mobile-section-margin-bottom: 60px;

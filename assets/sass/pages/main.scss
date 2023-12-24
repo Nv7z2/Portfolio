@@ -3,14 +3,31 @@
 
 body {
     background-color: v.$background-color;
-    min-height: 100vh;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
-section {
-    max-width: calc(100vw - 100px);
+main {
+    display: flex;
+    gap: 100px;
+
+    max-width: v.$desktop-max-width;
     margin: 0 auto;
 
+    @include m.mq(xxlarge) {
+        max-width: calc(100vw - 100px * 2);
+    }
+
+    @include m.mq(xlarge) {
+        max-width: calc(100vw - 100px * 2);
+    }
+
+    @include m.mq(large) {
+        max-width: calc(100vw - 60px * 2);
+        display: block;
+    }
+
     @include m.mq(small) {
-        max-width: calc(100vw - 40px);
+        max-width: calc(100vw - 20px * 2);
     }
 }

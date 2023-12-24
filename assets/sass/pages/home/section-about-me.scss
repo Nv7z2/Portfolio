@@ -1,0 +1,76 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.home__about-me {
+    margin-bottom: v.$desktop-section-margin-bottom;
+
+    @include m.mq(small) {
+        margin-bottom: v.$mobile-section-margin-bottom;
+    }
+
+    .about-me-text-content {
+        display: flex;
+        gap: 50px;
+        margin-top: 30px;
+
+        @include m.mq(large) {
+            flex-direction: column;
+            gap: 35px;
+        }
+    }
+
+    .about-me-left-column {
+        flex: 2;
+    }
+
+    .about-me-right-column {
+        flex: 1;
+    }
+
+    .about-me-description {
+        padding-bottom: 50px;
+
+        & > p:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+
+        @include m.mq(large) {
+            padding-bottom: 0;
+        }
+    }
+
+    .about-me-quote-wrapper {
+        display: flex;
+        gap: 25px;
+        flex-direction: column;
+
+        @include m.mq(large) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .about-me-quote-content {
+        color: #777;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.9px;
+
+        @include m.mq(medium) {
+            font-size: 16px;
+        }
+    }
+
+    .about-me-quote-author {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: right;
+
+        @include m.mq(medium) {
+            font-size: 16px;
+        }
+    }
+}

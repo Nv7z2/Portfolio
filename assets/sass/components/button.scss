@@ -1,15 +1,27 @@
 @use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 .button {
     display: inline-flex;
     align-items: center;
-    padding: 20px 30px;
+    padding: 15px 25px;
+    height: 45px;
     color: v.$primary;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 1px;
+    border-radius: 5px;
+
+    @include m.mq(medium) {
+        font-size: 16px;
+    }
+
+    svg path {
+        fill: v.$primary;
+        stroke: v.$primary;
+    }
 
     &--main {
         @extend .button;
@@ -41,6 +53,7 @@
         @extend .button--main;
 
         border: none;
+        padding: 15px 0;
         position: relative;
 
         &::after {
@@ -67,6 +80,40 @@
 
         &:hover::after {
             width: 100%;
+        }
+    }
+    
+    &--plain {
+        @extend .button;
+
+        border: none;
+        padding: 0 !important;
+        
+        svg {
+            transform: rotate(45deg);
+            margin-left: 20px;
+        }
+    }
+
+    &--main-filled {
+        @extend .button--main;
+
+        background-color: v.$primary;
+        color: v.$background-color;
+
+        &:hover {
+            background-color: v.$background-color;
+            color: v.$primary;
+        }
+
+        svg path {
+            stroke: v.$background-color;
+            fill: v.$background-color;
+        }
+
+        &:hover svg path {
+            fill: v.$primary;
+            stroke: v.$primary;
         }
     }
 }

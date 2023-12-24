@@ -3,14 +3,23 @@
 
 .social-media-icon,
 .social-media-icon--medium {
+    width: 25px;
     transition: all .15s ease;
+
+    path {
+        stroke: v.$text-color;
+    }
 
     &:hover path {
         stroke: v.$primary;
     }
 
-    &--medium:hover path {
+    &--medium path {
         stroke: unset;
+        fill: v.$text-color;
+    }
+
+    &--medium:hover path {
         fill: v.$primary;
     }
 }

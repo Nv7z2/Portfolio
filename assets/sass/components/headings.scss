@@ -3,21 +3,17 @@
 
 .heading--h1 {
     color: v.$text-color;
-    font-family: Poppins;
-    font-size: 80px;
+    font-size: 50px;
     font-style: normal;
-    font-weight: 900;
-    line-height: 105px; /* 131.25% */
-    letter-spacing: 4px;
+    font-weight: 700;
+    line-height: normal;
 
     @include m.mq(large) {
         font-size: 56px;
-        line-height: 64px;
     }
     
     @include m.mq(small) {
         font-size: 32px;
-        line-height: 40px;
     }
 }
 

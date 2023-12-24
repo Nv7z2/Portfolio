@@ -9,9 +9,13 @@ get_header();
 ?>
 
 <main id="main" class="home">
-    <section class="home__hero">
-        <?php get_template_part('partials/home/section', 'hero'); ?>
-    </section>
+        <?php get_template_part('partials/global/navigation'); ?>
+
+        <div class="conent">
+                <?php get_template_part('partials/home/section', 'hero'); ?>
+                <?php get_template_part('partials/home/section', 'about-me'); ?>
+                <?php get_template_part('partials/home/section', 'services'); ?>
+        </div>
 </main>
 
 <?php get_footer(); ?>

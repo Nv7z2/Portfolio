@@ -1,9 +1,7 @@
 @use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 @import 'home/section-hero';
-@import 'home/section-portfolio';
+@import 'home/section-about-me';
+@import 'home/section-services';
 
-.home {
-    max-width: v.$desktop-max-width;
-    margin: 0 auto;
-}

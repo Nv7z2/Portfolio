@@ -1,0 +1,38 @@
+@use '../base/variables.scss' as v;
+@use '../base/mixins.scss' as m;
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    border-top: 1px solid #414141;
+
+    @include m.mq(xxlarge) {
+        padding: 35px 20px;
+    }
+
+    @include m.mq(small) {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+
+    p {
+        color: #414141;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.75px; 
+    }
+
+    a {
+        color: v.$text-color;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.75px;
+        text-decoration-line: underline;
+    }
+}
