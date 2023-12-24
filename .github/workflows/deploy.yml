@@ -31,7 +31,7 @@ jobs:
         server: kacperbaran.pl
         username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: public_html/wp-content/themes/kacperbaran
+        server-dir: public_html/wp-content/themes/kacperbaran/
         exclude: |
           **/.git*
           **/.git*/**
