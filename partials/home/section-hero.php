@@ -1,9 +1,12 @@
 <?php
 
-$hero_description = get_field('hero_description');
-$main_heading = get_field('main_heading');
-$main_button = get_field('main_button');
-$additional_button = get_field('additional_button');
+$hero_section = get_field('hero_section');
+
+$hero_description = $hero_section['hero_description'];
+$main_heading = $hero_section['main_heading'];
+$hero_buttons = $hero_section['hero_buttons'];
+$main_button = $hero_buttons['main_button'];
+$additional_button = $hero_buttons['additional_button'];
 ?>
 
 <section class="home__hero">

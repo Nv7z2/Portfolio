@@ -1,0 +1,13 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.page {
+
+    .content {
+        margin-top: 150px;
+
+        h1 {
+            margin-bottom: 50px;
+        }
+    }
+}
