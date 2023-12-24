@@ -7,7 +7,6 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    white-space: break-spaces;
 
     @include m.mq(large) {
         font-size: 50px;
@@ -16,6 +15,10 @@
     @include m.mq(small) {
         font-size: 32px;
     }
+}
+
+.main-heading {
+    white-space: break-spaces;
 }
 
 .heading--h2 {
