@@ -39,6 +39,11 @@
         background-color: v.$background-color;
     }
 
+    @include m.mq(small) {
+        top: 30px;
+        right: 30px;
+    }
+
     &--active {}
 }
 
@@ -70,6 +75,10 @@
     @include m.mq(medium) {
         width: 75vw;
     }
+
+    @include m.mq(small) {
+        width: 85vw;
+    }
     
     .navigation {
         ul {
@@ -83,6 +92,14 @@
 
             &:last-child {
                 margin-bottom: 50px;
+            }
+
+            @include m.mq(large) {
+                margin-bottom: 50px;
+            }
+
+            @include m.mq(medium) {
+                margin-bottom: 35px;
             }
         }
 
@@ -98,6 +115,14 @@
             &:hover {
                 transform: translateX(.5rem);
             }
+
+            @include m.mq(large) {
+                font-size: 1.5rem;
+            }
+
+            @include m.mq(medium) {
+                font-size: 1.25rem;
+            }
         }
 
         li.current_page_item a {
@@ -112,6 +137,10 @@
                 width: 9px;
                 height: 8px;
                 background: url('../../dist/img/menu_arrow.svg') center / cover;
+
+                @include m.mq(large) {
+                    width: 20px;
+                }
             }
         }
 

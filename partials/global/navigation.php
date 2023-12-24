@@ -31,9 +31,11 @@ wp_nav_menu(
     const navigationBlur = document.querySelector('.navigation-blur');
     const navigationWrapper = document.querySelector('.navigation-wrapper');
 
-    navigationHamburgerButton.addEventListener('click', () => {
-        navigationHamburgerButton.classList.toggle('navigation-burger--active');
-        navigationBlur.classList.toggle('navigation-blur--active');
-        navigationWrapper.classList.toggle('navigation-wrapper--active');
-    })
+    [navigationHamburgerButton, navigationBlur].forEach(navigationClicableElement => {
+        navigationClicableElement.addEventListener('click', () => {
+            navigationHamburgerButton.classList.toggle('navigation-burger--active');
+            navigationBlur.classList.toggle('navigation-blur--active');
+            navigationWrapper.classList.toggle('navigation-wrapper--active');
+        });
+    });
 </script>

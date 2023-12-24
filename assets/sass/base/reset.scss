@@ -1,5 +1,7 @@
 html, body {
     margin: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 25vh;
 }
 
 * {

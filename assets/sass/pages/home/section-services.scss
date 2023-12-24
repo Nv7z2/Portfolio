@@ -76,6 +76,10 @@
         line-height: normal;
         visibility: hidden;
         max-height: 0;
+
+        p:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
         
         &--active {
             visibility: visible;

@@ -13,16 +13,17 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-poppins;
 }
 
-p, span, a, li {
+p, span, a, li, div {
   font-family: $font-family-poppins;
+  color: v.$text-color-darker;
 }
 
 p, span {
-  color: v.$text-color;
+  // color: v.$text-color;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 25px; /* 138.889% */
+  line-height: 1.5; /* 138.889% */
 
   @include m.mq(medium) {
     font-size: 16px;

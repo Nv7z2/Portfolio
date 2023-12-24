@@ -32,7 +32,7 @@
         display: flex;
         gap: 50px;
 
-        @include m.mq(medium) {
+        @include m.mq(small) {
             flex-direction: column;
             gap: 20px;
         }
