@@ -23,7 +23,9 @@ $contact_description = get_field('description');
                 <?php echo $contact_description; ?>
             </div>
 
-            <?php echo do_shortcode('[contact-form-7 id="822dcaa" title="Contact form 1"]'); ?>
+            <div class="contact-form-wrapper">
+                <?php echo do_shortcode('[contact-form-7 id="822dcaa" title="Contact form 1"]'); ?>
+            </div>
         </div>
 </main>
 

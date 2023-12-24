@@ -4,7 +4,7 @@
 
 ## Overview
 
-This theme is designed to showcase my personal portfolio and blog. It is built with simplicity, responsiveness, and performance in mind based on the UI/UX design I made in Figma.
+This theme is designed to showcase my personal portfolio and blog. It is built with simplicity, responsiveness, and performance in mind based on the UI/UX design I made in Figma. 
 
 ## Technologies Used
 

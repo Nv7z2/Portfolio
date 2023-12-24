@@ -12,10 +12,10 @@ $additional_button = $hero_buttons['additional_button'];
 <section class="home__hero">
     <div class="hero-text-content">
 
-        <h1 class="main-heading heading--h1"><?php echo $main_heading; ?></h1>
+        <?php echo $main_heading; ?>
 
         <?php if ($hero_description): ?>
-            <p class="hero-description"><?php echo $hero_description; ?></p>
+            <div class="hero-description"><?php echo $hero_description; ?></div>
         <?php endif; ?>
     </div>
 

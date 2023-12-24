@@ -1,7 +1,7 @@
 const homePageTimeline = anime.timeline({
     easing: 'easeOutCubic',
-    duration: 500,
-    delay: 100
+    duration: 300,
+    delay: 200
 });
 
 homePageTimeline

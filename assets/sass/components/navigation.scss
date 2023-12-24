@@ -48,10 +48,11 @@
 }
 
 .navigation-wrapper {
-    padding-top: 150px;
+    padding-top: calc(v.$desktop-section-margin-top + 15px);
     position: sticky;
     top: 0;
     align-self:first baseline;
+
 
     @include m.mq(large) {
         display: none;

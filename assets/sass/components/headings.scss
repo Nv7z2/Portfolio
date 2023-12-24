@@ -7,6 +7,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    white-space: break-spaces;
 
     @include m.mq(large) {
         font-size: 50px;
@@ -23,4 +24,21 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal; 
+}
+
+.heading--h2,
+.heading--h3 {
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -0.25rem;
+        left: 0;
+        width: 100px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: v.$primary;
+    }
 }

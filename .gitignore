@@ -3,3 +3,4 @@ assets/dist
 assets/dist
 !assets/dist/fonts/*
 !assets/dist/js/anime.min.js
+.ftp-deploy-sync-state.json

@@ -6,10 +6,10 @@
     margin-bottom: v.$desktop-section-margin-bottom;
 
     .content {
-        padding-top: 150px;
+        margin-top: v.$desktop-section-margin-top;
     
         @include m.mq(large) {
-            padding-top: 7vh;
+            margin-top: v.$mobile-section-margin-top;
         }
 
         @include m.mq(small) {
@@ -19,6 +19,12 @@
 
     &-description {
         margin: 50px 0;
+    }
+
+    .contact-form-wrapper {
+        padding: 25px 50px 40px;
+        border-radius: 20px;
+        background-color: lighten(v.$background-color, 5%);
     }
 
     form {
@@ -33,10 +39,11 @@
             border-radius: 5px;
             background-color: v.$background-color;
             transition: border-color .15s;
-            outline: 2px solid v.$text-color-darker; 
+            outline: 2px solid lighten(v.$background-color, 25%); 
             color: v.$text-color;
             font-size: 16px;
             padding: 10px 20px;
+            margin-top: .5rem;
 
             &:focus {
                 outline-color: v.$primary;
@@ -47,7 +54,7 @@
             height: 200px;
         }
 
-        span, input:not([type="checkbox"]):not([type="submit"]), textarea {
+        span:not(.wpcf7-spinner), input:not([type="checkbox"]):not([type="submit"]), textarea {
             display: block;
             width: 100%;
         }
@@ -72,7 +79,7 @@
                 width: 20px;
                 height: 20px;
                 border-radius: 3px;
-                border: 2px solid v.$text-color-darker;
+                border: 2px solid lighten(v.$background-color, 25%);
                 background-color: v.$background-color;
             }
 
