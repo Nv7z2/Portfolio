@@ -13,3 +13,12 @@ add_theme_support('menus');
 register_nav_menus( array(
     'sidebar'   => 'Display this menu in left sidebar',
 ) );
+
+// Disable loading unnecessary styles on frontend
+function disable_gutenberg_wp_enqueue_scripts() {
+	if (is_admin()) return;
+		
+    wp_dequeue_style('wp-block-library');
+    wp_dequeue_style('wp-block-library-theme');
+}
+add_filter('wp_enqueue_scripts', 'disable_gutenberg_wp_enqueue_scripts', 100);
