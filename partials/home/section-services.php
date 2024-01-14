@@ -6,7 +6,7 @@ $services_repeater = $services_section['single_service'];
 ?>
 
 <section class="home__services">
-    <h1 class="heading--h2"><?php echo $services_heading; ?></h1>
+    <h2 class="heading--h2"><?php echo $services_heading; ?></h1>
 
     <div class="services-heading-wrapper">
         <?php

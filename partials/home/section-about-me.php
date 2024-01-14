@@ -8,7 +8,7 @@ $about_me_button = $about_me_section['about-me_button'];
 ?>
 
 <section class="home__about-me">
-    <h1 class="heading--h2"><?php echo $about_me_heading; ?></h1>
+    <h2 class="heading--h2"><?php echo $about_me_heading; ?></h1>
 
     <div class="about-me-text-content">
         <div class="about-me-left-column">
