@@ -6,6 +6,10 @@
     .content {
         margin-top: v.$desktop-section-margin-top;
 
+        @include m.mq(small) {
+            margin-top: 2rem;
+        }
+
         h1 {
             margin-bottom: 50px;
         }

@@ -1,0 +1,35 @@
+@mixin rwd($breakpoint) {
+    @if $breakpoint == mobile {
+        @media only screen and (max-width: 599px) {
+        @content;
+        }
+    }
+
+    @else if $breakpoint == tablet {
+        @media only screen and (max-width: 1024px) {
+        @content;
+        }
+    }
+
+    @else if $breakpoint == desktop-small {
+        @media only screen and (max-width: 1440px) {
+        @content;
+        }
+    }
+
+    @else if $breakpoint == desktop {
+        @media only screen and (min-width: 1441px) {
+        @content;
+        }
+    }
+
+    @else if $breakpoint == desktop-wide {
+        @media only screen and (min-width: 2000px) {
+        @content;
+        }
+    }
+
+    @else {
+        @error "Nieprawidłowy breakpoint. Dostępne: phone, tablet, desktop";
+    }
+}
