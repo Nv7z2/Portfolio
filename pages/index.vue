@@ -1,4 +1,7 @@
 <template>
+    <ContentDoc />
+    <HeroSection />
+    <Spacer />
     <Footer />
 </template>
 
